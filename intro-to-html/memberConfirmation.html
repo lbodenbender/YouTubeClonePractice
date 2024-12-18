@@ -1,0 +1,42 @@
+<h4 style="text-align: center">Are You a Member of LCFSC?</h4>
+
+<button class="yesButton">Yes</button>
+<button class="noButton">No</button>
+<button class="backButton" @onclick="Back">
+    <div class="icon"></div>
+    BACK
+</button>
+
+<button style="text-align: center" class="nextButton" @onclick="Next">
+    <div class="icon"></div>
+    NEXT
+</button>
+
+<style>
+    .yesButton, .noButton {
+        padding: 10px 20px;
+        margin: auto;
+        background-color: lightgray;
+        border: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    .selected {
+        background-color: #a64bff;
+        color: white;
+    }
+    .backButton {
+        background-color: #a64bff;
+        margin: auto;
+        padding: 10px 17px;
+        border: none;
+        border-radius: 60px;
+    }
+    .nextButton {
+        background-color: #a64bff;
+        margin: auto;
+        padding: 10px 20px;
+        border: none;
+    }
+</style>
